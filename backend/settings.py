@@ -147,5 +147,12 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = ["notafront.vercel.app"]
-CORS_ALLOWS_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://notafront.vercel.app",  # Ensure this matches your Vercel frontend
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://notafront.vercel.app",
+]
+
+CORS_ALLOW_CREDENTIALS = True
