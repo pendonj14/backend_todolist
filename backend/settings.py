@@ -28,12 +28,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-n!(b@6@+lq+!r!#zh*p9g@reiy35_3y7th+toylf(7r053t1nl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["52.62.239.119", 
                  "notafront.vercel.app",
                  "127.0.0.1", 
-                "localhost",]
+                "localhost",
+                "notabackend.duckdns.org",]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -151,15 +152,16 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = True 
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://notafront.vercel.app",  # Ensure https:// is included
-]
 
 CORS_ALLOWED_ORIGINS = [
     "https://notafront.vercel.app",  # Ensure https:// is included
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://notafront.vercel.app",  # Ensure https:// is included
+]
+
 CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_ALL_ORIGINS = False
+
