@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-n!(b@6@+lq+!r!#zh*p9g@reiy35_3y7th+toylf(7r053t1nl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["52.62.239.119", "notafront.vercel.app"]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -147,5 +147,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = ["notafront.vercel.app"]
 CORS_ALLOWS_CREDENTIALS = True
