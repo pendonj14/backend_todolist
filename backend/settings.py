@@ -34,7 +34,8 @@ ALLOWED_HOSTS = ["52.62.239.119",
                  "notafront.vercel.app",
                  "127.0.0.1", 
                 "localhost",
-                "notabackend.duckdns.org",]
+                "notabackend.duckdns.org",
+                "notafront-josephs-projects-579b1c75.vercel.app"]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -154,13 +155,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://notafront.vercel.app",  # Ensure https:// is included
+    "https://notafront.vercel.app",
+    "notafront-josephs-projects-579b1c75.vercel.app"# Ensure https:// is included
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
     "https://notafront.vercel.app",  # Ensure https:// is included
+    "notafront-josephs-projects-579b1c75.vercel.app"
 ]
 
 CORS_ALLOW_CREDENTIALS = True
