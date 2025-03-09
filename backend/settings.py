@@ -36,7 +36,8 @@ ALLOWED_HOSTS = ["52.62.239.119",
                  "127.0.0.1", 
                 "localhost",
                 "notabackend.duckdns.org",
-                "notafront-josephs-projects-579b1c75.vercel.app"]
+                "notafront-josephs-projects-579b1c75.vercel.app",
+                '*',]
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
