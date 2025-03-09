@@ -32,6 +32,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["52.62.239.119", 
                  "notafront.vercel.app",
+                 "https://notafront.vercel.app",
                  "127.0.0.1", 
                 "localhost",
                 "notabackend.duckdns.org",
