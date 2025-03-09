@@ -158,7 +158,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://3.107.176.16",  # Fixed by adding http://
 ]
 
-CORS_ALLOW_ALL_ORIGINS = False  # Remove "*" from CORS_ALLOWED_ORIGINS
+CORS_ALLOW_ALL_ORIGINS = True  # Remove "*" from CORS_ALLOWED_ORIGINS
 
 CSRF_TRUSTED_ORIGINS = [
     "https://notafront.vercel.app",
