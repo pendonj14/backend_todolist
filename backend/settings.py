@@ -30,6 +30,7 @@ SECRET_KEY = 'django-insecure-n!(b@6@+lq+!r!#zh*p9g@reiy35_3y7th+toylf(7r053t1nl
 DEBUG = False
 
 ALLOWED_HOSTS = ['3.107.176.16',
+                 '52.62.239.119'
                  '*',]
 
 REST_FRAMEWORK = {
