@@ -153,15 +153,20 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CORS_ALLOWED_ORIGINS = [
-    "https://notafront.vercel.app",
-    "notafront-josephs-projects-579b1c75.vercel.app"# Ensure https:// is included
+    "https://notafront.vercel.app",  # Ensure https:// is included
+    "https://notafront-josephs-projects-579b1c75.vercel.app",
+    '3.107.176.16',
+     "*",
 ]
+
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
     "https://notafront.vercel.app",  # Ensure https:// is included
-    "notafront-josephs-projects-579b1c75.vercel.app"
+    "https://notafront-josephs-projects-579b1c75.vercel.app",
+    '3.107.176.16',
+     "*",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
